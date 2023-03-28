@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Instagram Clone</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <script src="./js/javascript.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div id="main">
+        <h2>Box Size</h2>
+        Width:<input type="text" id="width-input"/>px
+        &nbsp;&nbsp;&nbsp;
+        Height:<input type="text" id="height-input" />px 
+        <button type="button" id=button1 onclick="ChangeBoxSize()">
+        set width/height </button>
+      </div>
+      <div id="main">
+        <h2>Box Border</h2>
+        Border Width:<input type="text" id="bwidth-input"/>px
+        &nbsp;&nbsp;&nbsp;
+        <button type="button" id=button1 onclick="ChangeBorderWidth()">
+        set Border Size </button>  
+        <br>
+        Border Color: 
+        <button type="button" id=button1 style="background-color:Green" onclick="document.getElementById('box1').style.borderColor = 'green'">
+        Green</button> 
+        &nbsp;&nbsp;&nbsp;
+        <button type="button" id=button1 style="background-color:Red" onclick="document.getElementById('box1').style.borderColor = 'red'">
+          Red</button> 
+        &nbsp;&nbsp;&nbsp; 
+        <button type="button" id=button1 style="background-color:orange" onclick="document.getElementById('box1').style.borderColor = 'orange'">
+          Orange</button> 
+
+        <br>
+        Border Style: 
+        <button type="button" id=button1 onclick="document.getElementById('box1').style.borderStyle = 'solid'">
+        Solid</button> 
+        &nbsp;&nbsp;&nbsp;
+        <button type="button" id=button1 onclick="document.getElementById('box1').style.borderStyle = 'dotted'">
+          Dotted</button> 
+        &nbsp;&nbsp;&nbsp; 
+        <button type="button" id=button1 onclick="document.getElementById('box1').style.borderStyle = 'dashed'">
+          Dashed</button> 
+      </div>
+
+      <div id="main">
+        <h2>Box Bacground Color</h2>
+        Background color: 
+        <button type="button" id=button1 style="background-color:Green" onclick="document.getElementById('box1').style.backgroundColor = 'green'">
+        Green</button> 
+        &nbsp;&nbsp;&nbsp;
+        <button type="button" id=button1 style="background-color:red" onclick="document.getElementById('box1').style.backgroundColor = 'red'">
+        Red</button> 
+        &nbsp;&nbsp;&nbsp; 
+        <button type="button" id=button1 style="background-color:orange" onclick="document.getElementById('box1').style.backgroundColor = 'orange'">
+        Orange</button> 
+        &nbsp;&nbsp;&nbsp;
+      </div>
+      <div id="box1">
+      </div>
+  </div>
+  
+</body>
+</html>
